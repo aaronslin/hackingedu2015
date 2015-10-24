@@ -1,3 +1,8 @@
+var dict={};
+$.getJSON('dictionary.json', function(data) { 
+	dict=data;
+	alert(dict["DIPLOBLASTIC"]);
+}); 
 
 chrome.runtime.onInstalled.addListener(function() {
 	chrome.contextMenus.create({
@@ -9,6 +14,8 @@ chrome.runtime.onInstalled.addListener(function() {
 
 chrome.contextMenus.onClicked.addListener(
 	function(info, tab) {
+		// Highlight the selected word
+		// Display the word and the definition
 		alert(info.selectionText);
 	}
 );
