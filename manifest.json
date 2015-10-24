@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Flaze",
+  "description": "Dictionary + Flashcards",
+  "version": "0.1",
+
+  "permissions": [
+    "contextMenus", "tabs"
+  ],
+
+  "icons": {
+    "16": "16.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
